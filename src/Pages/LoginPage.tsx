@@ -31,7 +31,7 @@ function LoginPage() {
       .then((response: AxiosResponse) => {
         storeToken(response.data.authToken);
         authenticateUser();
-        navigate("/request");
+        navigate("/requests-view");
       })
       .catch((error: any) => {
         setErrorMessage(error.response.data.errorMessage);
