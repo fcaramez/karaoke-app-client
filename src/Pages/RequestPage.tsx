@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import FormPage from "../styles/FormPage";
 import { ToastContainer, toast } from "react-toastify";
@@ -84,7 +83,6 @@ function RequestPage() {
                   Submit request
                 </button>
               </div>
-              <Link to="/login">Login</Link>
             </div>
           </form>
         </div>
