@@ -1,8 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import SignupPage from "./Pages/SignupPage";
 import LoginPage from "./Pages/LoginPage";
 import RequestPage from "./Pages/RequestPage";
-import IsAnon from "./components/IsAnon";
 import IsPrivate from "./components/IsPrivate";
 import RequestView from "./Pages/RequestView";
 import Logout from "./components/Logout";

@@ -1,13 +1,9 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import axios, { AxiosResponse } from "axios";
 import FormPage from "../styles/FormPage";
-import { AuthContext } from "../context/auth.context";
-import { request } from "https";
 
 function RequestView() {
   const [requests, setRequests] = useState<any>([]);
-
-  const { user } = useContext(AuthContext);
 
   const getToken = localStorage.getItem("authToken");
 
