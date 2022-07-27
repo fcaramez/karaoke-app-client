@@ -55,7 +55,6 @@ function AuthProviderWrapper(props) {
 
   useEffect(() => {
     authenticateUser();
-    console.log(localStorage.getItem("authToken"));
   }, []);
 
   return (
