@@ -4,6 +4,8 @@ import RequestPage from "./Pages/RequestPage";
 import IsPrivate from "./components/IsPrivate";
 import RequestView from "./Pages/RequestView";
 import Logout from "./components/Logout";
+import ErrorPage from "./Pages/ErrorPage";
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,7 @@ function App() {
           }
         />
         <Route path="/logout" element={<Logout />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );
